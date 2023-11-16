@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# **pragma.team** Senior Frontend Dev Assesment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is part of selection process for Senior Frontend Engineer to **pragma.team**
 
-## Available Scripts
+## Node/React versions and Run instructions
 
-In the project directory, you can run:
+- Node 20.9.0
+- React 18.2.0
 
-### `npm start`
+I decided to use the use the vanilla npm install to minimize the dependencies of the project.
+Please type `npm install` then `npm start` to start the project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Highlights
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Use of React basic structures and componentization;
+- Use of React css modules and vanilla css;
+- Use of axios to make the API calls;
+- Use of a JSON [beers.json](./src/data/beers.json) file to load the beer list;
+- Integrated [React Bootstrap](https://react-bootstrap.netlify.app/) for grid and card layout.
 
-### `npm test`
+## Improvements if more time
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Add tests
+- Add **pragma.team** logo to the header;
+- Complete the Header and Navigation placeholder sections;
+- Add comment header to the files indicating file purpose, creation date, etc;
+- Add more comments in the relevant parts of the code;
+- Make the temperature range dynamic and parameterized;
+- Add error handler to the API call method
 
-### `npm run build`
+## Questions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- No instructions about edge cases (E.g.: beer id not in list);
+ - Display a card with an message saying that the beer id was not found.
+- What if every beer have a different optimal temperature range?
+ - Add temperature range to the [beers.json](./src/data/beers.json) and modify the method who verifies if the optimal temperature range. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Approach
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Use the stateless and stateful components
+- No need of context in this proof of concept
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

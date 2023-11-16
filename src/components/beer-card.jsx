@@ -1,11 +1,13 @@
 import React, { useCallback, useState, useEffect } from "react";
 import axios from "axios";
-import { Card, CardTitle } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import styles from "./components.module.css";
 import BeerTitle from "./beer-title";
 import BeerDetail from "./beer-details";
 
 // Verify if the beer is in the optimal temperature range (3-6ºC)
+// This method is a static one so it's out of the component code for prevent 
+// undesirable rerendering
 const isBeerOk = (temp) => {
     return  temp >= 3 && temp <= 6
 }

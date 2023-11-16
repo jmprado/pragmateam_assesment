@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Board from './components/board';
 
-import styles from './App.css';
+import './App.css';
 
 function App() {
   return (
