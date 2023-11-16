@@ -1,0 +1,42 @@
+.card {
+    height: 164px;
+    cursor: pointer;
+}
+
+.cardContent {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.beerOk {
+    background-color: #dcfce7;
+}
+
+.beerProblem {
+    background-color: #ffd8cb;
+}
+
+.detailInfo{
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.detailBeerName{
+    font-size: 24px;
+    font-weight: bold;;
+}
+
+.center{
+    text-align: center;
+}
+
+.fullWidth{
+    min-width: 300px;
+}

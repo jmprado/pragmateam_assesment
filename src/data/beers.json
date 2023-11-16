@@ -1,0 +1,28 @@
+{
+    "beers": [
+        {
+            "id": 1,
+            "name": "Pilsner"
+        },
+        {
+            "id": 2,
+            "name": "Witbier"
+        },
+        {
+            "id": 3,
+            "name": "Lager"
+        },
+        {
+            "id": 4,
+            "name": "Stout"
+        },
+        {
+            "id": 5,
+            "name": "Pale Ale"
+        },
+        {
+            "id": 6,
+            "name": "IPA"
+        }
+    ]
+}
