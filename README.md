@@ -16,7 +16,7 @@ Please type `npm install` then `npm start` to start the project.
 - Use of React css modules and vanilla css;
 - Use of axios to make the API calls;
 - Use of a JSON [beers.json](./src/data/beers.json) file to load the beer list;
-- Integrated [React Bootstrap](https://react-bootstrap.netlify.app/){:target="_blank"} for grid and card layout.
+- Integrated [React Bootstrap](https://react-bootstrap.netlify.app/) for grid and card layout.
 
 ## Improvements if more time
 
