@@ -25,7 +25,7 @@ const BeerCard = (props) => {
             // Set card background color 
             setBeerCardClass(isBeerOk(beerTemp) ? styles.beerOk : styles.beerProblem);
         });
-    }, []);
+    }, [props.BeerId]);
 
     useEffect(() => {
         fetchDetails();
@@ -36,7 +36,7 @@ const BeerCard = (props) => {
         }, 3000);
 
         return () => clearInterval(intervalId);
-    }, []);
+    }, [fetchDetails]);
 
     const handleBeerClick = () => {
         setToggleDetail(!toggleDetail);
