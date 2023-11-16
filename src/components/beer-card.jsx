@@ -5,7 +5,7 @@ import styles from "./components.module.css";
 import BeerTitle from "./beer-title";
 import BeerDetail from "./beer-details";
 
-
+// Verify if the beer is in the optimal temperature range (3-6ºC)
 const isBeerOk = (temp) => {
     return  temp >= 3 && temp <= 6
 }
@@ -20,6 +20,7 @@ const BeerCard = (props) => {
         axios.get(url).then((response) => {
             setDetail(response.data);
             const beerTemp = response.data.temperature;
+            // Set card background color 
             setBeerCardClass(isBeerOk(beerTemp) ? styles.beerOk : styles.beerProblem);
         });
     }, []);
@@ -40,8 +41,8 @@ const BeerCard = (props) => {
     }
 
     return (
-        <Card>
-            <Card.Body className={beerCardClass} onClick={() => handleBeerClick()}>
+        <Card className={styles.cardBg}>
+            <Card.Body className={`${beerCardClass} ${styles.borderRadius} `}onClick={() => handleBeerClick()}>
                 {toggleDetail  
                     ? <BeerDetail Name={props.BeerName} Temp={detail.temperature} />                    
                     : <BeerTitle Name={props.BeerName} />
