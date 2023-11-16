@@ -31,9 +31,9 @@ Please type `npm install` then `npm start` to start the project.
 ## Questions
 
 - No instructions about edge cases (E.g.: beer id not in list);
- - Display a card with an message saying that the beer id was not found.
+    - Display a card with an message saying that the beer with the specified was not found.
 - What if every beer have a different optimal temperature range?
- - Add temperature range to the [beers.json](./src/data/beers.json) and modify the method who verifies if the optimal temperature range. 
+    - Add temperature range to the [beers.json](./src/data/beers.json) and modify the method who verifies if the beer is in optimal temperature range. 
 
 ## Approach
 
